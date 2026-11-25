@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <!-- 상단 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="새로운 방 만들기"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- 안내 문구 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="함께 생활할 룸메이트 공간을 만들어 보세요."
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="35dp"/>
+
+    <!-- 방 이름 안내 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="방 이름"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- 방 이름 입력 -->
+    <EditText
+        android:id="@+id/etRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="방 이름을 입력하세요."
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:inputType="text"/>
+
+    <!-- 방 생성 버튼 -->
+    <Button
+        android:id="@+id/btnCreateRoom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="방 생성하기"
+        android:textSize="16sp"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>

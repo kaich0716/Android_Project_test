@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="방 상세 정보"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvDetailRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="우리 집"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#222222" />
+
+    <TextView
+        android:id="@+id/tvDetailRoomCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="방 참여 코드: ABC123"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#555555" />
+
+    <TextView
+        android:id="@+id/tvDetailRoomRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="방장"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#3366CC" />
+
+    <TextView
+        android:id="@+id/tvDetailMemberCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="참여 인원: 3명"
+        android:textSize="15sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#555555" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="참여 회원 목록"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRoomMembers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <Button
+        android:id="@+id/btnLeaveRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="방 나가기"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E57373"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDeleteRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="방 삭제하기"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDetailBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="뒤로 가기"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
